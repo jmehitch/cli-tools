@@ -1,1 +1,16 @@
-/usr/local/bin/compare
+#!/bin/bash
+# compares two strings
+
+if [[ $# -eq 0 ]] ; then
+    echo "no args"
+    exit 0
+elif [[ $# -gt 2 ]] ; then 
+    echo "too many args"
+    exit 0
+fi
+
+if [[ $1 == $2 ]] ; then
+    echo "✅ matchy"
+else
+    echo "❌ no matchy"
+fi 
