@@ -1,0 +1,3 @@
+#!/bin/bash
+MESSAGE="$@"
+git add . && git commit -m "$(git rev-parse --abbrev-ref HEAD): $MESSAGE"
