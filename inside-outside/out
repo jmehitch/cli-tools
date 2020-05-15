@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# setting iterm2 profile to light
+echo "\033]50;SetProfile=jamie-light\a"
+
+# setting vs codium theme to light
+jq -c '."workbench.colorTheme" = "Solarized Light"' /Users/jhi01/Library/Application\ Support/VSCodium/User/settings.json > tmp.settings.json && mv tmp.settings.json /Users/jhi01/Library/Application\ Support/VSCodium/User/settings.json
