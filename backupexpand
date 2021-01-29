@@ -1,0 +1,5 @@
+#! /bin/bash
+
+echo "if you try to login again you should be prompted to use a backup verification code, you can use this code: \`$1\`
+
+you should then be able to login and should be prompted to set up 2FA so this doesn’t happen again - let me know if you have any issues" | pbcopy
