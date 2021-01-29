@@ -1,4 +1,5 @@
 #! /bin/bash
+if [[ -z "$1" ]]; then echo "error: need to pass in a code as arg" && exit 1; fi
 
 echo "if you try to login again you should be prompted to use a backup verification code, you can use this code: \`$1\`
 
